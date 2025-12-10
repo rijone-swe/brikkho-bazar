@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>রিজওয়ানের বৃক্ষ বাজার | Plant Shop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f7f2;
+        }
+        header {
+            background: #2e7d32;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .banner {
+            width: 100%;
+            height: 280px;
+            background-image: url('COVER.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 42px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px black;
+        }
+        .container {
+            padding: 30px;
+        }
+        .plant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .plant-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        .plant-card:hover {
+            transform: scale(1.05);
+        }
+        .plant-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+        .plant-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .plant-info h3 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .price {
+            font-size: 18px;
+            color: #2e7d32;
+            font-weight: bold;
+            margin: 8px 0;
+        }
+        .btn {
+            padding: 10px 15px;
+            background: #2e7d32;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #1b5e20;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2e7d32;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>রিজওয়ানের বৃক্ষ বাজার</header>
+
+<div class="banner">
+    Fresh & Healthy Plants</div>
+
+<div class="container">
+    <h2 style="text-align:center; font-size:28px; margin-bottom:20px;">আমাদের গাছের সংগ্রহ</h2>
+
+    <div class="plant-grid">
+
+        <div class="plant-card">
+            <img src="areca rijone.png" alt="Areca Palm" />
+            <div class="plant-info">
+                <h3>Areca Palm</h3>
+                <p class="price">৳ 650</p>
+                <button class="btn" onclick="buy('Areca Palm')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="plant-card">
+            <img src="money plant.png" alt="Money Plant" />
+            <div class="plant-info">
+                <h3>Money Plant</h3>
+                <p class="price">৳ 220</p>
+                <button class="btn" onclick="buy('Money Plant')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="plant-card">
+            <img src="snake plant rijone.jpg" alt="Snake Plant" />
+            <div class="plant-info">
+                <h3>Snake Plant</h3>
+                <p class="price">৳ 450</p>
+                <button class="btn" onclick="buy('Snake Plant')">Buy Now</button>
+            </div>
+        </div>        <div class="plant-card">
+            <img src="rijone rio.jpg" alt="Rio Plant" />
+            <div class="plant-info">
+                <h3>Rio Plant</h3>
+                <p class="price">৳ 80</p>
+                <button class="btn" onclick="buy('Rio Plant')">Buy Now</button>
+            </div>
+        </div>
+
+        <div class="plant-card">
+            <img src="adenium rijone .jpg" alt="Adenium" />
+            <div class="plant-info">
+                <h3>Adenium</h3>
+                <p class="price">৳ 350</p>
+                <button class="btn" onclick="buy('Adenium')">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 রিজওয়ানের বৃক্ষ বাজার | All Rights Reserved
+</footer>
+
+<script>
+    function buy(plant) {
+        alert(plant + " added to cart!");
+    }
+</script>
+
+</body>
+</html>
